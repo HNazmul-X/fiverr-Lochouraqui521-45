@@ -17,13 +17,18 @@ html {
     margin: auto;
     margin-top: 10px;
     --color1: #3742fa;
-    --color2: #1E90FF;
+    --color2: #1e90ff;
     --text1: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     background: var(--text1);
 
-    &#Home-page{
+    &#Home-page {
         background-color: var(--text1);
     }
 
@@ -38,7 +43,6 @@ html {
         height: 508px;
         overflow: hidden;
         overflow-y: auto;
-    
 
         &::-webkit-scrollbar {
             width: 8px; /* width of the entire scrollbar */
@@ -130,12 +134,12 @@ html {
 .p-contain {
     padding: 30px;
 }
-.btn-c2{
-    background:var(--color2)
-    ;border:none;
-    padding:3px 5px;
-    color:var(--text1);
-    &.rd{
+.btn-c2 {
+    background: var(--color2);
+    border: none;
+    padding: 3px 5px;
+    color: var(--text1);
+    &.rd {
         border-radius: 40px;
     }
 }
@@ -158,4 +162,3 @@ html {
 #network-page {
     @import "network";
 }
-

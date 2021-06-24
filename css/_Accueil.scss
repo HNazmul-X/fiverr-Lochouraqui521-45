@@ -4,6 +4,7 @@
 
 header#header {
     padding-bottom: 20px;
+    position: relative;
     .slider-part {
         .slider {
             .AccueilPageHeaderSlider {
@@ -65,6 +66,19 @@ header#header {
             }
         }
     }
+
+    [class*="slider-ill-"] {
+        position: absolute;
+        width: 198px;
+        left: -54px;
+        top: 61%;
+        transform: translateY(-50%);
+    }
+
+    .slider-ill-2 {
+        right: -54px;
+        left: auto;
+    }
 }
 
 #progression {
@@ -97,8 +111,9 @@ header#header {
     }
     .checkmark-boxes {
         display: flex;
-        width: 252px;
+        width: 311px;
         margin: auto;
+        justify-content: space-between;
         background: #deeffe;
 
         .box {
@@ -170,23 +185,23 @@ section.planning {
         }
     }
 
-    .round-circle{
-        background:white;
-        width:180px;
-        height:180px;
+    .round-circle {
+        background: white;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column;
         margin: auto;
-        .btn-c2.rd.small{
-            font-size:12px;
+        .btn-c2.rd.small {
+            font-size: 12px;
         }
     }
 }
 
-section.location{
-    background:var(--text1)
-    ;padding:15px 0;
+section.location {
+    background: var(--text1);
+    padding: 15px 0;
 }

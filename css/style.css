@@ -21,15 +21,15 @@ html body {
   margin: auto;
   margin-top: 10px;
   --color1: #3742fa;
-  --color2: #1E90FF;
+  --color2: #1e90ff;
   --text1: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   background: var(--text1);
 }
 
@@ -345,6 +345,7 @@ html body {
 
 #Accueil-page header#header {
   padding-bottom: 20px;
+  position: relative;
 }
 
 #Accueil-page header#header .slider-part .slider .AccueilPageHeaderSlider {
@@ -415,6 +416,20 @@ html body {
   display: inline-block;
 }
 
+#Accueil-page header#header [class*="slider-ill-"] {
+  position: absolute;
+  width: 198px;
+  left: -54px;
+  top: 61%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#Accueil-page header#header .slider-ill-2 {
+  right: -54px;
+  left: auto;
+}
+
 #Accueil-page #progression {
   background: var(--text1);
 }
@@ -452,8 +467,11 @@ html body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 252px;
+  width: 311px;
   margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #deeffe;
 }
 
@@ -601,8 +619,7 @@ html body {
 #event-page .event-container {
   margin: 0px auto;
   background-color: #2f3542;
-  width: 280px;
-  height: 360px;
+  width: 314px;
 }
 
 #event-page .event-container-header {
